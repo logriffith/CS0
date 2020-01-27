@@ -3,6 +3,7 @@ CS0 Spring 2020
 Lew Griffith
 ## Assignments
 ## Assigment 1
+-finished!
 
 
 
