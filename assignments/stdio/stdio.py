@@ -8,6 +8,6 @@ The task is to write a program that prints various stages/gallows of the Hangman
 """
 print("Hello welcome to the Hangman Game!")
 
-name=input("What is your name?")
+name=input("What is your name? ")
 
 print("Hello" , name)
