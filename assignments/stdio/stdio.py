@@ -10,3 +10,6 @@ print("Hello welcome to the Hangman Game!")
 
 print("What is your name?")
 
+name=input("What is your name?")
+
+print("Hello name")
