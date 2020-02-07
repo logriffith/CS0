@@ -16,3 +16,11 @@ print("Stage 0")
 print("|-------")
 print("|\       |")
 #... fix the rest
+
+"""
+Notes from class
+"""
+a=10
+print(float(a))
+b='10'
+print(a*float(b))
