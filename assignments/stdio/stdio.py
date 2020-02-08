@@ -6,7 +6,7 @@ This program is the Hangman Game.
 
 The task is to write a program that prints various stages/gallows of the Hangman Game.
 """
-print("Hello, welcome to the Hangman Game!")
+print("Hello welcome to the Hangman Game!")
 name=input("What is your name? ")
 print("Why, Hello" , name,"!")
 print("The hangman game is under construction. Maybe you’ll get\nto play it in a few weeks. This is what various stages of\nthe game will look like…")
