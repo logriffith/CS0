@@ -19,8 +19,12 @@ print("|\       |")
 
 """
 Notes from class
-"""
+
 a=10
 print(float(a))
 b='10'
 print(a*float(b))
+
+3 in binary is 11.
+3=3(10^0)
+"""
