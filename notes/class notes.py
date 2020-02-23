@@ -14,7 +14,7 @@ print("this is what various stages of hangman game will look like")
 print()
 print("Stage 0")
 print("|-------")
-print("|\       |")
+print("|\\       |")
 #... fix the rest
 
 """
