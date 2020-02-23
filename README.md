@@ -12,14 +12,14 @@ Lew Griffith
     -I think that I have earned a 100% on this assignment.
 
 ## 2 - Triangle
--The program has the user input three sides of a triangle.
--The program has the computer calculate the area and perimeter of the triangle.
--A test is done to verify that the three sides form a triangle.
--I belive that I met all of the requirements.
--I ran the program many times using different triangles that I knew.
--I tested to make sure that the program didn't run when it shouldn't run.
--I think that I have earned 110/100 on this assignment.
--The assignment is in the assignments folder.
+    -The program has the user input three sides of a triangle.
+    -The program has the computer calculate the area and perimeter of the triangle.
+    -A test is done to verify that the three sides form a triangle.
+    -I belive that I met all of the requirements.
+    -I ran the program many times using different triangles that I knew.
+    -I tested to make sure that the program didn't run when it shouldn't run.
+    -I think that I have earned 110/100 on this assignment.
+    -The assignment is in the assignments folder.
 
 
 
