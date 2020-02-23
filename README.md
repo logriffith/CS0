@@ -19,6 +19,7 @@ Lew Griffith
 -I ran the program many times using different triangles that I knew.
 -I tested to make sure that the program didn't run when it shouldn't run.
 -I think that I have earned 110/100 on this assignment.
+-The assignment is in the assignments folder.
 
 
 
