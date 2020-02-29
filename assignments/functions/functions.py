@@ -2,11 +2,13 @@
 Assignment 3: A Basic Calculator using Functions and Automated Unit Testing
 By: Lew Griffith
 
-The task is to write a Python program that performs some arithmetic operations on two given numbers. These numbrers will be inputed by the user.
+The task is to write a Python program that performs some arithmetic operations on two given numbers. These numbrers will be inputed by the user. Functions were created in order to make the desired calculations.
 
 """
 def sum(a,b):
     sum=a+b
+    assert sum(5,3)==8
+    assert sum(17,9)==26
     return sum
 
 def multiply(a,b):
@@ -25,11 +27,13 @@ def subtract(a,b):
     return difference
 
 def modular(a,b):
-    if b!=0:
+    if type(a)==int and type(b)==int and b!=0:
         mod=a%b
         return mod
-    else: 
+    elif b==0: 
         print("Error: Cannot Divide by Zero")
+    else:
+        print("Modular arithmetic is for integers. The second of the two integers must be nonzero.")
 
 def power(a,b):
     if b==0:
@@ -54,6 +58,10 @@ def max(a,b):
     else:
         print("They are equal")
 
-
-
-
+print("Hello, this program will provide the sum, difference, product, quotient, remainder (for integers), square root, and maximum of two numbers")
+print("In addition, given to numbers, this program will calculate the first number raised to the power of the second.")
+print("Please input the two numbers.")
+numb1=input("What is the first number?")
+numb2=input("What is the second number?")
+print()
+print("The sum of the two numbers is", sum(numb1,numb2),'.')
