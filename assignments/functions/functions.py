@@ -5,10 +5,6 @@ By: Lew Griffith
 The task is to write a Python program that performs some arithmetic operations on two given numbers. These numbrers will be inputed by the user.
 
 """
-
-import math
-
-
 def sum(a,b):
     sum=a+b
     return sum
@@ -44,10 +40,19 @@ def power(a,b):
 
 def square_root(a):
     if a>=0:
-        root=math.sqrt(a)
+        root=power(a,0.5)
         return root
     else:
         print("Not a real number")
+
+#Bonus Function
+def max(a,b):
+    if a<b:
+        return b
+    elif a>b:
+        return a
+    else:
+        print("They are equal")
 
 
 
