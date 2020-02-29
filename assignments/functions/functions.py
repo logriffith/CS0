@@ -7,8 +7,6 @@ The task is to write a Python program that performs some arithmetic operations o
 """
 def sum(a,b):
     sum=a+b
-    assert sum(5,3)==8
-    assert sum(17,9)==26
     return sum
 
 def multiply(a,b):
@@ -27,13 +25,11 @@ def subtract(a,b):
     return difference
 
 def modular(a,b):
-    if type(a)==int and type(b)==int and b!=0:
+    if b!=0:
         mod=a%b
         return mod
-    elif b==0: 
-        print("Error: Cannot Divide by Zero")
     else:
-        print("Modular arithmetic is for integers. The second of the two integers must be nonzero.")
+        print("Cannot divide by zero.")
 
 def power(a,b):
     if b==0:
@@ -58,10 +54,15 @@ def max(a,b):
     else:
         print("They are equal")
 
-print("Hello, this program will provide the sum, difference, product, quotient, remainder (for integers), square root, and maximum of two numbers")
-print("In addition, given to numbers, this program will calculate the first number raised to the power of the second.")
+assert sum(5,3)==8
+assert sum(17,9)==26
+
+print()
+print("Hello, this program will provide the sum, difference, product, quotient,\nremainder (for integers), square root, and maximum of two numbers. In addition,\ngiven to numbers, this program will calculate the first number raised to the\npower of the second.")
+print()
 print("Please input the two numbers.")
 numb1=input("What is the first number?")
 numb2=input("What is the second number?")
 print()
-print("The sum of the two numbers is", sum(numb1,numb2),'.')
+print("The sum of the two numbers is", sum(float(numb1),float(numb2)),'.')
+print(modular(int(numb1),int(numb2)))
