@@ -18,18 +18,18 @@ def divide(a,b):
         quotient=a/b
         return quotient
     else:
-        print("Error: Cannot Divide by Zero")
+        print("Cannot Divide by Zero")
 
 def subtract(a,b):
     difference=a-b
     return difference
 
 def modular(a,b):
-    if b!=0:
+    if b>0:
         mod=a%b
         return mod
     else:
-        print("Cannot divide by zero.")
+        print("The second number must be greater than zero.")
 
 def power(a,b):
     if b==0:
@@ -54,8 +54,32 @@ def max(a,b):
     else:
         print("They are equal")
 
+### Assert Statements to Test Functions ###
+
+#Sum Function#
 assert sum(5,3)==8
 assert sum(17,9)==26
+#Multiply Function#
+assert multiply(7,8)==56
+assert multiply(0.5,10)==5
+#Divide Function#
+assert divide(125,5)==25
+assert divide(41.54,5)==8.308
+#Subtract Function#
+assert subtract(37,9)==28
+assert subtract(22.55,5.5)==17.05
+#Modular Function#
+assert modular(4,37)==4
+assert modular(-4,7)==3
+#Power Function#
+assert power(0.5,3)==0.125
+assert power(3,3)==27
+#Square Root Function#
+assert square_root(25)==5
+assert square_root(0.25)==0.5
+#Max Function#
+assert max(33,656)==656
+assert max(55,44)==55
 
 print()
 print("Hello, this program will provide the sum, difference, product, quotient,\nremainder (for integers), square root, and maximum of two numbers. In addition,\ngiven to numbers, this program will calculate the first number raised to the\npower of the second.")
