@@ -2,9 +2,10 @@
 Assignment 3: A Basic Calculator using Functions and Automated Unit Testing
 By: Lew Griffith
 
-The task is to write a Python program that performs some arithmetic operations on two given numbers. These numbrers will be inputed by the user. Functions were created in order to make the desired calculations.
+The task is to write a Python program that performs some arithmetic operations on two given numbers. These numbrers will be inputed by the user. Functions were created in order to make the desired calculations. These functions will be tested using assert statements.
 
 """
+##### Functions ######
 def sum(a,b):
     sum=a+b
     return sum
@@ -54,6 +55,8 @@ def max(a,b):
     else:
         print("They are equal")
 
+####################
+
 ### Assert Statements to Test Functions ###
 
 #Sum Function#
@@ -77,7 +80,7 @@ assert power(3,3)==27
 #Square Root Function#
 assert square_root(25)==5
 assert square_root(0.25)==0.5
-#Max Function#
+#Bonus Max Function#
 assert max(33,656)==656
 assert max(55,44)==55
 
@@ -105,3 +108,6 @@ print()
 print("If each number is nonnegative, then the square root of the first\nnumber is",square_root(float(numb1)), "and the square root of the second number is",square_root(float(numb2)),'.')
 print()
 print("The larger of the two numbers is",max(float(numb1),float(numb2)),'.')
+print()
+print("Have a nice day!")
+print()
