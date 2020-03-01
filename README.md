@@ -21,6 +21,18 @@ Lew Griffith
     -I think that I have earned 110/100 on this assignment.
     -The assignment is in the assignments folder.
 
+## 3 - Functions
+    -The program has all 7 required functions
+    -The program also has the bonus function
+    -The user is asked to input two numbers
+    -The functions are called and pass the entered numbers
+    -I think that I have adequate descriptions to accompany the calculations
+    -I have 8 assert statements, two per function
+    -I think that I met all of the requirements
+    -I have completed this assignment
+    -I think that I have earned a 110/100 on this assignment
+    -The functions folder is in the assignments folder
+
 
 
 
