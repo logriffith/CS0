@@ -81,6 +81,8 @@ assert square_root(0.25)==0.5
 assert max(33,656)==656
 assert max(55,44)==55
 
+##
+
 print()
 print("Hello, this program will provide the sum, difference, product, quotient,\nremainder (for integers), square root, and maximum of two numbers. In addition,\ngiven to numbers, this program will calculate the first number raised to the\npower of the second.")
 print()
@@ -89,4 +91,17 @@ numb1=input("What is the first number?")
 numb2=input("What is the second number?")
 print()
 print("The sum of the two numbers is", sum(float(numb1),float(numb2)),'.')
-print(modular(int(numb1),int(numb2)))
+print()
+print("The product of the two numbers is", multiply(float(numb1),float(numb2)), '.')
+print()
+print("The first number subtracted by the second is", subtract(float(numb1),float(numb2)),'.')
+print()
+print("The first number divided by the second is",divide(float(numb1),float(numb2)),'.')
+print()
+print("If the numbers are integers, where the first integer is divided\nby the positive second integer, then the remainder is", modular(int(numb1),int(numb2)),'.')
+print()
+print("The first number raised to the power of the second is", power(float(numb1),float(numb2)),'.')
+print()
+print("If each number is nonnegative, then the square root of the first\nnumber is",square_root(float(numb1)), "and the square root of the second number is",square_root(float(numb2)),'.')
+print()
+print("The larger of the two numbers is",max(float(numb1),float(numb2)),'.')
