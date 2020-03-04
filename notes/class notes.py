@@ -1,3 +1,4 @@
+###Assignmnet 1 notes and instructions####
 """
 Assignment 1: A siimply hangman game steps
 -program displays various stages of hangman game
@@ -16,6 +17,7 @@ print("Stage 0")
 print("|-------")
 print("|\\       |")
 #... fix the rest
+#######
 
 """
 Notes from class
@@ -49,7 +51,7 @@ while True:
         if ans!='y':
             break
 
-for loops:
+## for loops
 for val in range of values:
     # loop body
 
@@ -62,4 +64,73 @@ thrid parameter is the step size:2
 for i in range(1,11):
     print(i,"Hello World")
     # this will output 1 Hello World
+
+for num in range(20):
+    print(num)
+output is 
+print 0
+print 1
+.
+.
+.
+print 19
+
+for num in range(20):
+    print(num, end=' ')
+output is 
+0 1 ... 19
+
+for i in range(1,11): #range 1...10
+    if i%2==0:
+        continue #continue means to go to the next i
+    print(i)
+output is
+1
+3
+5
+7
+9
+i.e. if i is odd, then the conditional is not met and i is printed
+
+ for i in range(1,11):
+     continue
+     print(i)
+output is nothing
+
+for i in range(10):
+    if i==5:   #same output if i>4
+        break
+    print(i)
+print('done')
+output is 
+0
+1
+2
+3
+4
+done
+## break ends the loop
+
+local variables are only inside functions, otherwise global
+
+for i in range(5):
+    print(i)
+    if i==2
+    break
+else:
+    print('end!')
+output is 
+0
+1
+2
+else is part of the for loop like if and elif go together
+
+n=97
+for i in range(2,n//2+1):
+    if n%i==0:
+        print(n, 'is not prime')
+        break
+else:
+    print(n, 'is prime')
+output is '107 is prime'
 """
