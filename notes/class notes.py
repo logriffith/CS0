@@ -133,4 +133,8 @@ for i in range(2,n//2+1):
 else:
     print(n, 'is prime')
 output is '107 is prime'
+
+python has only while loops and for loops
+
+i+=1 means i=i+1
 """
