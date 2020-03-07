@@ -13,7 +13,7 @@ def multiply(a,b,c,d,e):
     product=a*b*c*d*e
     return product
 
-def average(a,b,c,d,e):
+def average5(a,b,c,d,e):
     mean=add(a,b,c,d,e)/5
     return mean
 
@@ -56,6 +56,19 @@ def main():
     print()
     print("The sum of these numbers is", add(numb1,numb2,numb3,numb4,numb5))
     print("The product of these numbers is", multiply(numb1,numb2,numb3,numb4,numb5))
-    print("The average of these numbers is", average(numb1,numb2,numb3,numb4,numb5))
+    print("The average of these numbers is", average5(numb1,numb2,numb3,numb4,numb5))
     print("The maximum number is", maximum(numb1,numb2,numb3,numb4,numb5))
     print("The minimum number is", minimum(numb1,numb2,numb3,numb4,numb5))
+
+def test():
+    assert add(2,2,2,2,2)==10
+    assert add(23,34.6,45,35.04,688.004)==825.644
+    assert multiply(1,99,1,1,1)==99
+    assert multiply(4,5,3,7,11)==4620
+    assert average5(17,30,27,20,23)==23.4
+    assert average5(87,99,80,95,90)==90.2
+    assert maximum(4,5,6,7,77)==77
+    assert maximum(123,233,434,553,484848)==484848
+    assert minimum(4,5,6,7,77)==4
+    assert minimum(-5,3,5,6,4)==-5
+
