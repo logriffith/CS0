@@ -44,3 +44,18 @@ def minimum(a,b,c,d,e):
         return e
     else:
         print("Could not find a minimum.")
+
+def main():
+    print("Hello, please enter five numbers to compute the sum, product, average, maximum, and minimum.")
+    print()
+    numb1=input("What is the first number? ")
+    numb2=input("What is the second number? ")
+    numb3=input("What is the third number? ")
+    numb4=input("What is the fourth number? ")
+    numb5=input("What is the fifth number? ")
+    print()
+    print("The sum of these numbers is", add(numb1,numb2,numb3,numb4,numb5))
+    print("The product of these numbers is", multiply(numb1,numb2,numb3,numb4,numb5))
+    print("The average of these numbers is", average(numb1,numb2,numb3,numb4,numb5))
+    print("The maximum number is", maximum(numb1,numb2,numb3,numb4,numb5))
+    print("The minimum number is", minimum(numb1,numb2,numb3,numb4,numb5))
