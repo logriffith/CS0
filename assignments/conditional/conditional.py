@@ -28,8 +28,6 @@ def maximum(a,b,c,d,e):
         return d
     elif e>a and e>b and e>c and e>d:
         return e
-    else:
-        print("Could not find a maximum.")
 
 def minimum(a,b,c,d,e):
     if a<b and a<c and a<d and a<e:
@@ -42,8 +40,6 @@ def minimum(a,b,c,d,e):
         return d
     elif e<a and e<b and e<c and e<d:
         return e
-    else:
-        print("Could not find a minimum.")
 
 def main():
     print("Hello, please enter five numbers to compute the sum, product, average, maximum, and minimum.")
@@ -59,6 +55,7 @@ def main():
     print("The average of these numbers is", average5(numb1,numb2,numb3,numb4,numb5))
     print("The maximum number is", maximum(numb1,numb2,numb3,numb4,numb5))
     print("The minimum number is", minimum(numb1,numb2,numb3,numb4,numb5))
+    print()
 
 def test():
     assert add(2,2,2,2,2)==10
