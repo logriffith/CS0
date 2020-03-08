@@ -42,8 +42,6 @@ def minimum(a,b,c,d,e):
         return e
 
 def main():
-    print("Hello, please enter five numbers to compute the sum, product, average, maximum, and minimum.")
-    print()
     numb1=float(input("What is the first number? "))
     numb2=float(input("What is the second number? "))
     numb3=float(input("What is the third number? "))
@@ -55,7 +53,6 @@ def main():
     print("The average of these numbers is", average5(numb1,numb2,numb3,numb4,numb5))
     print("The maximum number is", maximum(numb1,numb2,numb3,numb4,numb5))
     print("The minimum number is", minimum(numb1,numb2,numb3,numb4,numb5))
-    print()
 
 def test():
     assert add(2,2,2,2,2)==10
@@ -69,4 +66,14 @@ def test():
     assert minimum(4,5,6,7,77)==4
     assert minimum(-5,3,5,6,4)==-5
 
-main()
+test()
+calculate_again='y'
+print()
+print("Hello, please enter five numbers to compute the sum, product, average, maximum, and minimum.")
+print()
+while calculate_again=='y':
+    main()
+    print()
+    calculate_again=input("Do you wish to make calculations for another set of five numbers [y,n] ")
+    print()
+    
