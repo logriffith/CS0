@@ -33,6 +33,18 @@ Lew Griffith
     -I think that I have earned a 110/100 on this assignment
     -The functions folder is in the assignments folder
 
+## 4 - Conditionals
+    -The program has all of the required computational functions
+    -The program has both the test function and the main function
+    -The user is asked to input 5 numbers, which is in the main function
+    -The test function has two assert statements per computational function
+    -The main fuction is called inside of a while loop so that the user can continue to make calculations until they choose to stop
+    -The calculations are done using each of the required computational functions
+    -I ran it several times
+    -I have met the requirements
+    -I think that I have earned 110/100
+    -The conditionals folder is inside the assignments folder
+    
 
 
 
