@@ -134,7 +134,39 @@ else:
     print(n, 'is prime')
 output is '107 is prime'
 
-python has only while loops and for loops
+python has only while loops and for-loops
 
 i+=1 means i=i+1
+
+randint ##needs random library
+
+#################################
+import time
+import os
+def ClearScreen():
+    if os.name=='nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+print(count)
+for i in range(10,0,-1):
+    print(i)
+    time.sleep(1)
+    ClearScreen()
+
+ClearScreen()
+print('Blast off!')
+################################
+
+for i in range(1,101):
+    if i%3==0 and i%5==0:
+        print('FizzBuzz')
+    elif i%3==0: 
+        print('Fizz')
+    elif i%5==0:
+        print('Buzz')
+    else: 
+        print(i)
+    
 """
