@@ -1,27 +1,5 @@
-###Assignmnet 1 notes and instructions####
+### Notes From CSCI 110 class ####
 """
-Assignment 1: A siimply hangman game steps
--program displays various stages of hangman game
-
-By: Ram Basnet
-1/30/20
-
-"""
-print("Hey there what's your name? ")
-# TBD- read the name and store into a variable
-print('Hey ...') # FIXME
-print('The hangman game is under construction, maybe you will get to play it i a few weeks')
-print("this is what various stages of hangman game will look like")
-print()
-print("Stage 0")
-print("|-------")
-print("|\\       |")
-#... fix the rest
-#######
-
-"""
-Notes from class
-
 a=10
 print(float(a))
 b='10'
@@ -159,6 +137,7 @@ ClearScreen()
 print('Blast off!')
 ################################
 
+Write a program that prints numbers betweeen 1 and 100 with the following requirements. If the number is divisible by 3, print "Fizz". If the number is divisible by 5, print "Buzz". If the number is divisible by both 3 and 5, print "FizzBuzz".
 for i in range(1,101):
     if i%3==0 and i%5==0:
         print('FizzBuzz')
@@ -168,5 +147,34 @@ for i in range(1,101):
         print('Buzz')
     else: 
         print(i)
-    
+
+def fizzbuzz(i):
+    if i%3==0 and i%5==0:
+        return 'FizzBuzz'
+    elif i%3==0: 
+        return 'Fizz'
+    elif i%5==0:
+        return 'Buzz'
+    else: 
+        return i
+
+for num in range (1,101):
+    print(fizzbuzz(num))
+
+def test():
+    assert fizzbuzz(1)==1
+    assert fizzbuzz(100)=='Buzz'
+    assert fizzbuzz(15)=='FizzBuzz'
+    assert fizzbuzz(3)=='Fizz'
+    print("all test cases passed!")
+###########################
+
+for
+## if break in for-loop is executed, then else is not executed
+else
+
+for c in 'hello':
+    print(c, end=' ')
+
+outputs h e l l o
 """
