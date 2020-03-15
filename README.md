@@ -44,8 +44,15 @@ Lew Griffith
     -I have met the requirements
     -I think that I have earned 110/100
     -The conditionals folder is inside the assignments folder
-    
 
+## 5 - Loop (Guess the Number Game)
+    -I think that met all of the requirements (90 points)
+    -I updated README (10 points)
+    -I tested the program several times
+    -I added a while loop so that the user can continue to play the game until they wish to stop. Their stats are shown at the end as well. (Bonus 10 points)
+    -This assignment is finished.
+    -I think that I earned 110/100.
+    -The loop folder is in the assignments folder
 
 
 
