@@ -18,10 +18,12 @@ def getBlimps():
     b3=input()
     b4=input()
     b5=input()
-    return b1,b2,b3,b4,b5
+    return [b1,b2,b3,b4,b5]
 
 def findBlimp():
-    b1,b2,b3,b4,b5=getBlimps()
-    if b1.find("FBI")>=0:
-        return 1
+    blimp=getBlimps()
+    for code in blimp:
+        if code.find("FBI")>=0:
+            print(code, end='')
 
+findBlimp()
