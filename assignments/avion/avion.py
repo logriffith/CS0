@@ -20,4 +20,8 @@ def getBlimps():
     b5=input()
     return b1,b2,b3,b4,b5
 
-getBlimps()
+def findBlimp():
+    b1,b2,b3,b4,b5=getBlimps()
+    if b1.find("FBI")>=0:
+        return 1
+
