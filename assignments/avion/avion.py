@@ -11,6 +11,8 @@ The task is to solve a kattis problem called "Avion". USKOK agents are looking f
 # 4. If found, output the row number on one line separated by a space each and in increasing order
 # 5. If not, output "HE GOT AWAY"
 
+import sys
+
 def getBlimps():
 # Steps 1 and 2
     b1=input()
@@ -18,10 +20,31 @@ def getBlimps():
     b3=input()
     b4=input()
     b5=input()
-    return [b1,b2,b3,b4,b5]
+    return b1,b2,b3,b4,b5
 
-def findBlimp():
-    blimp=getBlimps()
+def findBlimp(b1,b2,b3,b4,b5):
+    blimp=[b1,b2,b3,b4,b5]
+    counter=0
+    answer=''
     for code in blimp:
         if code.find("FBI")>=0:
-            print(blimp.index(code)+1,' ', end='')
+            answer+=str(blimp.index(code)+1)+' '
+        else:
+            counter+=1
+    if counter==5:
+        return "HE GOT AWAY!"
+    else:
+        return answer  
+
+def test():
+    assert findBlimp("FBIuej","FBIdjfk","8","ueu","FBIkdkf")=="1 2 5 "   
+    assert findBlimp("mommy_dearest","superman","krypto","boombam","hi")=="HE GOT AWAY!"   
+    assert findBlimp("hi","FBI11","FBI!","kdfkdjf", "graduation!!!!")=="2 3 "
+    print("All test cases passed")
+
+#findBlimp(getBlimps())
+if len(sys.argv)==2 and sys.argv[1]=="test":
+    test()
+else:
+    b1,b2,b3,b4,b5=getBlimps()
+    print(findBlimp(b1,b2,b3,b4,b5))
