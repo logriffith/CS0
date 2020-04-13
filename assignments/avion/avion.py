@@ -1,5 +1,5 @@
 """
-Assignment 5: Avion
+Assignment 6: Avion
 By: Lew Griffith
 
 The task is to solve a kattis problem called "Avion". USKOK agents are looking for a corrupt government who plans to escape on a CIA blimp. CIA blimps have the string "FBI" somewhere in the registration codes. This program will allow the user to input 5 five registration codes (in rows) and will search for "FBI" in the string.
