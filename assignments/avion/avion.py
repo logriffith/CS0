@@ -22,11 +22,6 @@ def getBlimps():
 
 def findBlimp():
     blimp=getBlimps()
-    #for code in blimp:
-    #    if code.find("FBI")>=0:
-    #        print(blimp.index(code), end='')
-    print(blimp)
-
-findBlimp()
-hey=[1,5,6,3]
-print(hey.index(6))
+    for code in blimp:
+        if code.find("FBI")>=0:
+            print(blimp.index(code)+1,' ', end='')
