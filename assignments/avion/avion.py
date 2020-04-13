@@ -31,8 +31,6 @@ def findBlimp(b1,b2,b3,b4,b5):
     for code in blimp:
         if code.find("FBI")>=0:
             answer+=str(blimp.index(code)+1)+' '
-            if code==blimp[4]:
-                answer+=str(blimp.index(code)+1)
         else:
             counter+=1
 # Step 4 
@@ -42,9 +40,9 @@ def findBlimp(b1,b2,b3,b4,b5):
         return answer  
 # Step 6
 def test():
-    assert findBlimp("FBIuej","FBIdjfk","8","ueu","FBIkdkf")=="1 2 5"   
+    assert findBlimp("FBIuej","FBIdjfk","8","ueu","FBIkdkf")=="1 2 5 "   
     assert findBlimp("mommy_dearest","superman","krypto","boombam","hi")=="HE GOT AWAY!"   
-    assert findBlimp("hi","FBI11","FBI!","kdfkdjf", "graduation!!!!")=="2 3"
+    assert findBlimp("hi","FBI11","FBI!","kdfkdjf", "graduation!!!!")=="2 3 "
     print("All test cases passed")
 
 if len(sys.argv)==2 and sys.argv[1]=="test":
