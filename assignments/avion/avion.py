@@ -24,12 +24,21 @@ def getBlimps():
     return b1,b2,b3,b4,b5
 
 def findBlimp(b1,b2,b3,b4,b5):
+    blimp=[b1,b2,b3,b4,b5]
+    counter=0
+    answer=''
 # Step 3
-    if b1.find("FBI")<0 and b2.find("FBI")<0 and b3.find("FBI")<0 and b4.find("FBI")<0 and b5.find("FBI")<0:
-        answer="HE GOT AWAY!"
-        return answer
-    else: 
-        
+    for code in blimp:
+        if code.find("FBI")>=0:
+            answer+=str(blimp.index(code)+1)+' '
+        else:
+            counter+=1
+# Step 4 
+    if counter==5:
+        return "HE GOT AWAY!"
+    else:
+        answer=answer.rstrip()
+        return answer  
 # Step 6
 def test():
     assert findBlimp("FBIuej","FBIdjfk","8","ueu","FBIkdkf")=="1 2 5"   
@@ -41,5 +50,5 @@ if len(sys.argv)==2 and sys.argv[1]=="test":
     test()
 else:
 # Step 5
-   if "FBI" in "dkfjdFBIdfjdkj":
-       print("It worked")
+    b1,b2,b3,b4,b5=getBlimps()
+    print(findBlimp(b1,b2,b3,b4,b5))
