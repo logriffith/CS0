@@ -54,5 +54,14 @@ Lew Griffith
     -I think that I earned 110/100.
     -The loop folder is in the assignments folder
 
+## 6 - Avion
+    -All but one test case passed in Kattis
+    -I tried everything that I could, but I cannot get it to work.
+    -There are three test cases in a test function and all cases passed
+    -screenshot is in the avion folder and called screenshot.png
+    -readme is now up to date
+    -Amanda Smith helped me with this assignment. 
+    -80/100
+
 
 
