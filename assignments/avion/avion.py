@@ -45,7 +45,7 @@ def test():
     assert findBlimp("hi","FBI11","FBI!","kdfkdjf", "graduation!!!!")=="2 3 "
     print("All test cases passed")
 
-if len(sys.argv)==2 and sys.argv[1]=="testMe":
+if len(sys.argv)==2 and sys.argv[1]=="test":
     test()
 else:
 # Step 5
