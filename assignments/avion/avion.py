@@ -42,7 +42,7 @@ def findBlimp(b1,b2,b3,b4,b5):
 # Step 6
 def test():
     assert findBlimp("FBIuej","FBIdjfk","8","ueu","FBIkdkf")=="1 2 5"   
-    assert findBlimp("mommy_dearest","superman","krypto","boombam","hi")=="HE GOT AWAY!"   
+    assert findBlimp("mommy_dearest","Superman","Krypto","boombam","hi")=="HE GOT AWAY!"   
     assert findBlimp("hi","FBI11","FBI!","kdfkdjf", "graduation!!!!")=="2 3"
     print("All test cases passed")
 
