@@ -65,7 +65,6 @@ Lew Griffith
     -This assignment is complete
     -100/100
     -Avion folder is in the assigments folder
-    -dfkdjfkdj
 
 
 
