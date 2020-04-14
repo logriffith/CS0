@@ -177,4 +177,11 @@ for c in 'hello':
     print(c, end=' ')
 
 outputs h e l l o
+
+def answer(num):
+    if num%2==0:
+        return f'{num} is even'
+    else:
+        return f'{num} is odd'
+answer(-10) will output '-10 is even'
 """
