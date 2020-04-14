@@ -55,13 +55,16 @@ Lew Griffith
     -The loop folder is in the assignments folder
 
 ## 6 - Avion
-    -All but one test case passed in Kattis
-    -I tried everything that I could, but I cannot get it to work.
+    -Kattis accepted my program
+    -I have a function for getting the data from the user
+    -I have a testable function that searches for the substring "FBI" and returns the blimps with "FBI" in the string
     -There are three test cases in a test function and all cases passed
-    -screenshot is in the avion folder and called screenshot.png
-    -readme is now up to date
+    -A screen shot of Kattis' acceptance of my program is in the avion folder and called screenshot.png
+    -program works for Kattis samples
     -Amanda Smith helped me with this assignment. 
-    -80/100
+    -This assignment is complete
+    -100/100
+    -avion folder is in the assigments folder
 
 
 
