@@ -12,3 +12,9 @@ The task is to solve a kattis problem called "Falling Apart". Bob and Alice are 
 # Step 5: Use a for-loop to have Alice and Bob take turns.
 # Step 6: Add up the total value distributed to each.
 # Step 7: Print to the user on one line separated by a space the amounts aquired by Alice and Bob (in that order).
+
+def getData():
+    pieces = int(input())
+    values = input()
+    return values
+print(getData())
