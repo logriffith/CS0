@@ -15,7 +15,19 @@ The task is to solve a kattis problem called "Falling Apart". Bob and Alice are 
 
 def getData():
     pieces = int(input())
-    values = input()
+    values =[]
+    for i in range(pieces):
+        values.append(float(input()))
     return values
+
+def turn(pieces):
+    Alice = 0
+    Bob = 0
+    for k in range(pieces):
+        if pieces[k]%2==0:
+            Alice += k
+        else:
+            Bob += k
+    return str(Alice) + str(Bob)
 
 print(getData())
