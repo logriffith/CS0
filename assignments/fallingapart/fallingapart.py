@@ -20,14 +20,11 @@ def getData():
         values.append(float(input()))
     return values
 
-def turn(pieces):
+def turn(number, pieces):
     Alice = 0
     Bob = 0
-    for k in range(pieces):
-        if pieces[k]%2==0:
-            Alice += k
-        else:
-            Bob += k
-    return str(Alice) + str(Bob)
-
-print(getData())
+    for i in range(number):
+        maxValue = max(pieces)
+        if pieces[k]%2 == 2:
+            Alice += maxValue
+            
