@@ -15,12 +15,7 @@ The task is to solve a kattis problem called "Falling Apart". Bob and Alice are 
 
 def getData():
     pieces = int(input())
-    values = [input() for piece in range(pieces)]
+    values = input()
     return values
 
-print(type(5.0))
-print(type(5))
-if 5==5.0:
-    print("Okay that worked")
-else:
-    print("They are not equal!")
+print(getData())
