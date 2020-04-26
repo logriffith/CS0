@@ -66,5 +66,14 @@ Lew Griffith
     -100/100
     -Avion folder is in the assigments folder
 
+## 7 - Falling Apart
+    -I used lists to solve this problem
+    -I wrote a function that can be independently tested
+    -I wrote three test cases in a test function
+    -Kattis accepted my solution
+    -Screenshot of Kattis acceptance is in fallingapart folder and is called acceptance.png
+    -README file is up to date
+    -I think that I have earned 100% on this assigmnent
+
 
 
