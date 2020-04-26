@@ -22,36 +22,28 @@ def turn(Svalues):
     values = []
     for element in pieces:
         values.append(int(element))
-    sortedValues = values.sort(reverse = True)
-    for i in len(sortedValues):
+        values.sort(reverse = True)
+    for i in range(len(values)):
         if i % 2 == 0:
-            Alice += sortedValues[0]
-            del sortedValues[0]
+            Alice += values[0]
+            del values[0]
         else:
-            Bob += sortedValues[0]
-            del sortedValues[0]
-    return str(Alice) + ' ' str(Bob)
+            Bob += values[0]
+            del values[0]
+    return str(Alice) + ' ' + str(Bob)
 
 def test():
     assert turn("23 55 66 1 6 323") == '384 90'
     assert turn("2 10 6 4 2") == "16 8"
     assert turn("5 5 5 5 5 5") == "15 15"
+    print("All test cases passed!!")
 
 def kattis():
     number_of_items = input()
     values_of_items = input()
-    return turn(values_of_items)
+    print(turn(values_of_items))
 
 if len(sys.argv) == 2 and sys.argv[1] == "test":
     test()
 else:
     kattis()
-
-if len(sys.argv)==2 and sys.argv[1]=="test":   
-    test()
-else:
-    c1,c2,c3,c4,c5=getBlimps()
-print(turn('4 6644 66 12 11 1 5678')) 
-
-
-
