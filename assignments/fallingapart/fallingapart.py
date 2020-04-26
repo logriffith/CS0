@@ -13,6 +13,8 @@ The task is to solve a kattis problem called "Falling Apart". Bob and Alice are 
 # Step 6: Add up the total value distributed to each.
 # Step 7: Print to the user on one line separated by a space the amounts aquired by Alice and Bob (in that order).
 
+import sys
+
 def turn(Svalues):
     Alice = 0
     Bob = 0
@@ -28,8 +30,27 @@ def turn(Svalues):
         else:
             Bob += sortedValues[0]
             del sortedValues[0]
-    return Alice, Bob
+    return str(Alice) + ' ' str(Bob)
 
+def test():
+    assert turn("23 55 66 1 6 323") == '384 90'
+    assert turn("2 10 6 4 2") == "16 8"
+    assert turn("5 5 5 5 5 5") == "15 15"
+
+def kattis():
+    number_of_items = input()
+    values_of_items = input()
+    return turn(values_of_items)
+
+if len(sys.argv) == 2 and sys.argv[1] == "test":
+    test()
+else:
+    kattis()
+
+if len(sys.argv)==2 and sys.argv[1]=="test":   
+    test()
+else:
+    c1,c2,c3,c4,c5=getBlimps()
 print(turn('4 6644 66 12 11 1 5678')) 
 
 
