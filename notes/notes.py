@@ -184,4 +184,13 @@ def answer(num):
     else:
         return f'{num} is odd'
 answer(-10) will output '-10 is even'
+
+Lists
+
+def getData():
+    pieces = int(input())
+    values =[]
+    for i in range(pieces):
+        values.append(float(input()))
+    return values
 """

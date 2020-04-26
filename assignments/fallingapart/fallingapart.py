@@ -13,18 +13,24 @@ The task is to solve a kattis problem called "Falling Apart". Bob and Alice are 
 # Step 6: Add up the total value distributed to each.
 # Step 7: Print to the user on one line separated by a space the amounts aquired by Alice and Bob (in that order).
 
-def getData():
-    pieces = int(input())
-    values =[]
-    for i in range(pieces):
-        values.append(float(input()))
-    return values
-
-def turn(number, pieces):
+def turn(Svalues):
     Alice = 0
     Bob = 0
-    for i in range(number):
-        maxValue = max(pieces)
-        if pieces[k]%2 == 2:
-            Alice += maxValue
-            
+    pieces = Svalues.split()
+    values = []
+    for element in pieces:
+        values.append(int(element))
+    sortedValues = values.sort(reverse = True)
+    for i in len(sortedValues):
+        if i % 2 == 0:
+            Alice += sortedValues[0]
+            del sortedValues[0]
+        else:
+            Bob += sortedValues[0]
+            del sortedValues[0]
+    return Alice, Bob
+
+print(turn('4 6644 66 12 11 1 5678')) 
+
+
+
