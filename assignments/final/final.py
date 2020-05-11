@@ -94,17 +94,32 @@ def game():
         guess=input("What is your first guess?")
         if guess in wordsList[word] and counter == 0:
             characters += wordsList[word].count(guess)
+            guess1 = guess
             gallows0()
             for i in range(len(wordsList[word])):
-                if wordsList[word][i] == guess:
-                    print(guess, end=' ')
+                if wordsList[word][i] == guess1:
+                    print(guess1, end=' ')
                 else: 
                     print('_', end=' ')
-                    print('\n')
+                print('\n')
         elif guess not in wordsList[word] and counter == 0:
             counter += 1
             gallows1()
             for i in range(len(wordsList[word])):
                 print('_ ', end=' ')
             print('\n')
+        elif guess in wordsList[word] and counter == 1:
+            characters += wordsList[word].count(guess)
+            guess2 = guess
+            gallows1()
+            for i in range(len(wordsList[word])):
+                if wordsList[word][i] == guess1:
+                    print(guess1, end=' ')
+                if wordsList[word][i] == guess2:
+                    print(guess2, end=' ')
+                else: 
+                    print('_', end=' ')
+                print('\n')
+            
 #game()
+
