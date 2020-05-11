@@ -7,38 +7,17 @@ This program is the Hangman Game. The rules of the game are to guess a letter in
 """
 import random
 
-wordsList = []
-with open('words.txt', 'r') as wordsFile:
-    data = wordsFile.readlines()
-for element in data:
-    wordsList.append(element.strip())
-word = random.randint(0,len(wordsList)-1)
-print("Stage 0")
-print()
-print('\t|---------|')
-print('\t|/        |')
-print('\t|')
-print('\t|')
-print('\t|')
-print('\t|')
-print('\t|')
-print('\t-------------')
-for i in range(len(wordsList[word])):
-    print('_ ', end=' ')
-print()
-guess1=input("What is your first guess?")
-if guess1 in wordsList[word]:
-    for i in range(len(wordsList[word])):
-        if wordsList[word][i] == guess1:
-            print(guess1, end=' ')
-        else: 
-            print('_', end=' ')
-else:
-    print("Stage 1")
-    print()
+def game():
+    wordsList = []
+    with open('words.txt', 'r') as wordsFile:
+        data = wordsFile.readlines()
+    for element in data:
+        wordsList.append(element.strip())
+    word = random.randint(0,len(wordsList)-1)
+    print('\n\tGallows\n')
     print('\t|---------|')
     print('\t|/        |')
-    print('\t|         O')
+    print('\t|')
     print('\t|')
     print('\t|')
     print('\t|')
@@ -47,6 +26,38 @@ else:
     for i in range(len(wordsList[word])):
         print('_ ', end=' ')
     print()
+    print()
+    guess1=input("What is your first guess?")
+    if guess1 in wordsList[word]:
+        print('\n\tGallows\n')
+        print('\t|---------|')
+        print('\t|/        |')
+        print('\t|')
+        print('\t|')
+        print('\t|')
+        print('\t|')
+        print('\t|')
+        print('\t-------------')
+        for i in range(len(wordsList[word])):
+            if wordsList[word][i] == guess1:
+                print(guess1, end=' ')
+            else: 
+                print('_', end=' ')
+    else:
+        print('\n\tGallows\n')
+        print('\t|---------|')
+        print('\t|/        |')
+        print('\t|         O')
+        print('\t|')
+        print('\t|')
+        print('\t|')
+        print('\t|')
+        print('\t-------------')
+        for i in range(len(wordsList[word])):
+            print('_ ', end=' ')
+        print()
+
+game()
 """
 
 print("Stage 2")
