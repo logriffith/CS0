@@ -5,6 +5,13 @@ By: Lew Griffith
 This program is the Hangman Game. The rules of the game are to guess a letter in a random word from a text file. Note that each word is all lower case. If the suggested letter is not in the word, then a head is drawn. Each guessed letter that is not in the word will result in another limb being drawn. If the user fiqures out the word before they reach Stage 6, then they win, otherwise, they lose.
 
 """
+import random
+wordsList = []
+with open('words.txt', 'r') as wordsFile:
+    data = wordsFile.readlines()
+for element in data:
+    wordsList.append(element.strip())
+word = random.randint(0,len(wordsList)-1)
 
 print("Stage 0")
 print()
