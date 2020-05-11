@@ -8,75 +8,75 @@ This program is the Hangman Game. The rules of the game are to guess a letter in
 import random
 
 def gallows0():
-    print('\n\tThe Gallows\n')
-    print('\t|---------|')
-    print('\t|/        |')
-    print('\t|')
-    print('\t|')
-    print('\t|')
-    print('\t|')
-    print('\t|')
-    print('\t-------------')
+    print('\nThe Gallows\n')
+    print('|---------|')
+    print('|/        |')
+    print('|')
+    print('|')
+    print('|')
+    print('|')
+    print('|')
+    print('-------------')
 def gallows1():
-    print('\n\tThe Gallows\n')
-    print('\t|---------|')
-    print('\t|/        |')
-    print('\t|         O')
-    print('\t|')
-    print('\t|')
-    print('\t|')
-    print('\t|')
-    print('\t-------------')
+    print('\nThe Gallows\n')
+    print('|---------|')
+    print('|/        |')
+    print('|         O')
+    print('|')
+    print('|')
+    print('|')
+    print('|')
+    print('-------------')
 def gallows2():
-    print('\n\tThe Gallows\n')
-    print('\t|---------|')
-    print('\t|/        |')
-    print('\t|         O')
-    print('\t|         |')
-    print('\t|         |')
-    print('\t|')
-    print('\t|')
-    print('\t-------------')
+    print('\nThe Gallows\n')
+    print('|---------|')
+    print('|/        |')
+    print('|         O')
+    print('|         |')
+    print('|         |')
+    print('|')
+    print('|')
+    print('-------------')
 def gallows3():
-    print('\n\tThe Gallows\n')
-    print('\t|---------|')
-    print('\t|/        |')
-    print('\t|         O')
-    print('\t|        \\|')
-    print('\t|         |')
-    print('\t|')
-    print('\t|')
-    print('\t-------------')
+    print('\nThe Gallows\n')
+    print('|---------|')
+    print('|/        |')
+    print('|         O')
+    print('|        \\|')
+    print('|         |')
+    print('|')
+    print('|')
+    print('-------------')
 def gallows4():
-    print('\n\tThe Gallows\n')
-    print('\t|---------|')
-    print('\t|/        |')
-    print('\t|         O')
-    print('\t|        \\|/')
-    print('\t|         |')
-    print('\t|')
-    print('\t|')
-    print('\t-------------')
+    print('\nThe Gallows\n')
+    print('|---------|')
+    print('|/        |')
+    print('|         O')
+    print('|        \\|/')
+    print('|         |')
+    print('|')
+    print('|')
+    print('-------------')
 def gallows5():
-    print('\n\tThe Gallows\n')
-    print('\t|---------|')
-    print('\t|/        |')
-    print('\t|         O')
-    print('\t|        \\|/')
-    print('\t|         |')
-    print('\t|        /')
-    print('\t|')
-    print('\t-------------')
+    print('\nThe Gallows\n')
+    print('|---------|')
+    print('|/        |')
+    print('|         O')
+    print('|        \\|/')
+    print('|         |')
+    print('|        /')
+    print('|')
+    print('-------------')
 def gallows6():
-    print('\n\tThe Gallows\n')
-    print('\t|---------|')
-    print('\t|/        |')
-    print('\t|         O')
-    print('\t|        \\|/')
-    print('\t|         |')
-    print('\t|        / \\')
-    print('\t|')
-    print('\t-------------')
+    print('\nThe Gallows\n')
+    print('|---------|')
+    print('|/        |')
+    print('|         O')
+    print('|        \\|/')
+    print('|         |')
+    print('|        / \\')
+    print('|')
+    print('-------------')
 def game():
     wordsList = []
     with open('words.txt', 'r') as wordsFile:
@@ -90,44 +90,37 @@ def game():
     print('\n')
     counter = 0
     characters = 0
-    while counter < 6:
-        guess=input("What is your first guess?")
-        if guess in wordsList[word] and counter == 0:
+    while characters <= len(wordsList[word]):
+        if characters == len(wordsList[word]):
+            print("You Won!")
+            break
+        elif counter == 6:
+            print("You lose!")
+            break
+        guess=input("What is your guess?")
+        if guess in wordsList[word] and counter <= 6:
             characters += wordsList[word].count(guess)
-            guess1 = guess
-            gallows0()
             for i in range(len(wordsList[word])):
-                if wordsList[word][i] == guess1:
-                    print(guess1, end=' ')
+                if wordsList[word][i] == guess:
+                    print(guess, end=' ')
                 else: 
                     print('_', end=' ')
-                print('\n')
-        elif guess not in wordsList[word] and counter == 0:
-            counter += 1
-            gallows1()
-            for i in range(len(wordsList[word])):
-                print('_ ', end=' ')
             print('\n')
-        elif guess in wordsList[word] and counter == 1:
-            characters += wordsList[word].count(guess)
-            guess2 = guess
-            gallows1()
-            for i in range(len(wordsList[word])):
-                if wordsList[word][i] == guess1:
-                    print(guess1, end=' ')
-                if wordsList[word][i] == guess2:
-                    print(guess2, end=' ')
-                else: 
-                    print('_', end=' ')
-                print('\n')
-        elif guess not in wordsList[word] and counter == 1:
+        elif guess not in wordsList[word] and counter <= 6:
             counter += 1
-            gallows2()
-            for i in range(len(wordsList[word])):
-                if wordsList[word][i] == guess1:
-                    print(guess1, end=' ') 
-                else:
-                    print('_ ', end=' ')
-            print('\n')           
+            if counter == 1:
+                gallows1()
+            elif counter == 2:
+                gallows2() 
+            elif counter == 3:
+                gallows3() 
+            elif counter == 4:
+                gallows4() 
+            elif counter == 5:
+                gallows5()
+            elif counter == 6:
+                gallows6()  
+    
+        
 game()
 
