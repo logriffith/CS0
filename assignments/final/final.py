@@ -120,6 +120,14 @@ def game():
                 else: 
                     print('_', end=' ')
                 print('\n')
-            
-#game()
+        elif guess not in wordsList[word] and counter == 1:
+            counter += 1
+            gallows2()
+            for i in range(len(wordsList[word])):
+                if wordsList[word][i] == guess1:
+                    print(guess1, end=' ') 
+                else:
+                    print('_ ', end=' ')
+            print('\n')           
+game()
 
