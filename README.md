@@ -75,5 +75,15 @@ Lew Griffith
     -README file is up to date
     -I think that I have earned 100% on this assigmnent
 
+## Final Project
+    -I think that I met most of the requirements
+    -I am just not sure if I have enough "bells and whistles"
+    -Program reads words from a text file and stores them in a list
+    -User tries to guess a random word from that list
+    -README file is up to date
+    -I think that I earned 95/100
+    -Have a great summer Dr. Basnet!
+    -Thank you for all of your help
+
 
 
