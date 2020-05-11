@@ -90,19 +90,21 @@ def game():
     print('\n')
     counter = 0
     characters = 0
-    #while counter !=6:
-    guess1=input("What is your first guess?")
-    if guess1 in wordsList[word]:
-        gallows0()
-        for i in range(len(wordsList[word])):
-            if wordsList[word][i] == guess1:
-                print(guess1, end=' ')
-            else: 
-                print('_', end=' ')
-    else:
-        gallows1()
-        for i in range(len(wordsList[word])):
-            print('_ ', end=' ')
-        print()
-
-game()
+    while counter < 6:
+        guess=input("What is your first guess?")
+        if guess in wordsList[word] and counter == 0:
+            characters += wordsList[word].count(guess)
+            gallows0()
+            for i in range(len(wordsList[word])):
+                if wordsList[word][i] == guess:
+                    print(guess, end=' ')
+                else: 
+                    print('_', end=' ')
+                    print('\n')
+        elif guess not in wordsList[word] and counter == 0:
+            counter += 1
+            gallows1()
+            for i in range(len(wordsList[word])):
+                print('_ ', end=' ')
+            print('\n')
+#game()
