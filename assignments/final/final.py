@@ -97,6 +97,7 @@ def game():
             break
         elif counter == 6:
             print("You lose! Why did you have to let him die?")
+            print("The word was", wordsList[word])
             break
         guess=input("What is your guess? ")
         if guess in wordsList[word] and counter <= 6:
